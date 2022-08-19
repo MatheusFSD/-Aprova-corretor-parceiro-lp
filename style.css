@@ -1,0 +1,782 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --roxo: #870D78;
+    --laranja: #FEA745;
+    --branco: #fafafa;
+    --fontePrincipal: "Poppins" 
+}
+
+h1, h2, h3, h4, h5, p {
+    font-family: var(--fontePrincipal);
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bolded {
+    font-weight: 900;
+}
+
+.textopequeno {
+    font-size: 18px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* ############################HEADER######################## */
+
+header {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    background: rgba(135, 13, 120, 0.6);
+    position: fixed;
+    box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    border-bottom: 3px solid rgba(250, 250, 250, 0.3);
+    backdrop-filter: blur(10px);
+
+}
+
+.header {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.image-header {
+    width: 35px;
+    
+}
+
+.header__links {
+    display: flex;
+    align-items: center;
+}
+
+.cadastro__link {
+    display: flex;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: #fafafa;
+    border-radius: 32px;
+    color: var(--roxo);
+}
+
+.cadastro__link-simples {
+    display: flex;
+    color: var(--branco);
+    margin-right: 1em;
+}
+
+.cadastro__texto {
+    font-weight: 400;
+}
+
+.cadastro__texto-bold {
+    font-weight: 900;
+}
+
+.contato {
+    display: flex;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    align-items: center;
+    background-color: rgb(46, 155, 60);
+    padding: 16px 32px;
+    border-radius: 32px;
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.texto-contato {
+    font-family: var(--fontePrincipal);
+    font-weight: medium;
+    font-size: 16px;
+    color: #fafafa;
+    margin-right: 16px;
+}
+
+.contato-img {
+    width: 24px;
+}
+
+/* ############################HERO######################## */
+
+.header__fundo {
+    width: 100%;
+    height: 65px;
+    background-color: var(--roxo);
+}
+
+.hero {
+    width: 100%;
+    height: 75vh;
+    background: linear-gradient(150.67deg, #E1316F 31.4%, #FEA745 89.87%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-imagem-mobile {
+    display: none;
+}
+
+.hero__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 940px;
+    width: 100%;
+}
+
+.hero-textos{
+    color: #fafafa;
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.chamada-hero {
+    line-height: 54px;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.descricao-hero {
+    font-weight: 200;
+    line-height: 24px;
+    font-size: 18px;
+}
+
+.cta {
+    background-color: var(--roxo);
+    color: var(--branco);
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 16px 0px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.cta:hover {
+    background-color: #670A5C;
+    /* box-shadow: inset 0 0 0 3px #fafafa; */
+    /* transition: .1s */
+}
+
+/* .cta:active {
+    zoom: 0.98;
+    transition: .2s
+} */
+
+
+/* ############################QUEM SOMOS######################## */
+
+.quemsomos {
+    max-width: 940px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 48px auto 96px auto;
+}
+
+.quemsomos__textos {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    color: var(--roxo);
+}
+
+.titulo {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.texto {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* ############################BENEFICIOS######################## */
+
+.beneficios {
+    max-width: 940px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    color: var(--roxo);
+    margin-bottom: 96px;
+}
+
+.beneficio__card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.beneficio__card-single {
+    display: flex;
+    flex-direction: column;
+    width: 223px;
+    align-items: center;
+    gap: 16px;
+    border: 2px solid var(--roxo);
+    border-radius: 32px;
+    padding: 32px 0px;
+}
+
+.beneficio__card-texto {
+    width: 167px;
+}
+
+/* ############################COMO FUNCIONA######################## */
+
+.funcionamento {
+    max-width: 940px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    color: var(--roxo);
+    margin-bottom: 96px;
+}
+
+.funcionamento__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.funcionamento__etapas {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--roxo);
+    border-radius: 32px;
+    justify-content: space-between;
+    padding: 16px 32px;
+}
+
+.funcionamento__etapas-numero {
+    font-weight: 900;
+    font-size: 64px;
+}
+
+.funcionamento__etapas-texto {
+    width: 572px;
+    text-align: start;
+}
+
+
+/* ############################COMISSÃO######################## */
+
+.comissão {
+    background-color: var(--roxo);
+    color: var(--branco);
+    margin-bottom: 96px;
+}
+
+.comissão__container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 32px;
+    max-width: 940px;
+    padding: 32px 0;
+}
+
+.comissão__container>h2 {
+    text-align: center;
+}
+
+.comissão__container-cards {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.comissão__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 382px;
+    padding: 32px 0px;;
+    color: var(--roxo);
+    background-color: var(--branco);
+    border-radius: 32px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.comissão__cards>p {
+    width: 203px;
+    text-align: center;
+}
+
+.comissão__cards>h3 {
+    font-size: 32px;
+}
+
+.comissão__cards-seta {
+    background-color: var(--branco);
+    width: 144px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);   
+}
+
+
+/* ############################QUEM PODE PARTICIPAR######################## */
+
+.participantes {
+    max-width: 940px;
+    margin: auto;
+    margin-bottom: 96px;
+}
+
+.participantes__container {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    color: var(--roxo);
+    justify-content: space-between;
+}
+
+.participantes__container-textos {
+    max-width: 542px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.participantes__container-textos>h2 {
+    margin-bottom: 16px;
+}
+
+.participantes__container-topicos {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* ############################FORMULÁRIO######################## */
+
+.formulário {
+    background-color: var(--roxo);
+    padding: 48px 0;
+    border-bottom: 10px solid var(--laranja);
+}
+
+.formulário__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 940px;
+    margin: auto;
+    margin-bottom: 96px;
+    color: var(--branco);
+}
+
+
+.formulário__container-campos {
+    display: flex;
+    flex-direction: column;
+    max-width: 462PX;
+    gap: 24px;
+}
+
+.formulário__container-nome {
+    padding: 16px 24px;
+    border-radius: 32px;
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.25);
+    font-family: var(--fontePrincipal);
+    font-size: 16px;
+    border: 0 none;
+    outline: 0;
+}
+
+.formulário__container-botão {
+
+    padding: 16px 0px;
+    font-family: var(--fontePrincipal);
+    font-weight: 900;
+    font-size: 18px;
+    border-radius: 16px;
+    border: 0 none;
+    outline: 0;
+    color: var(--branco);
+    background-color: var(--laranja);
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.25);
+    transition: .5s;
+}
+
+.formulário__container-botão:hover {
+    background-color: #FF9013;
+}
+
+.formulário__container-campos>div>h2 {
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+label {
+    font-family: var(--fontePrincipal);
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.formulário__container-origem, .formulário__container-experiência{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.formulário__container-input {
+    display: flex;
+    align-items: center;
+}
+
+.formulário__container-texto {
+    display: flex;
+    flex-direction: column;
+    max-width: 382px;
+    gap: 36px;
+}
+
+.formulário__container-texto>h2 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.formulário__container-texto>p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* ############################FOOTER######################## */
+
+footer {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #870D78;
+    padding: 32px 64px;
+}
+
+.footer__contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__textos {
+    max-width: 339px;
+}
+
+.footer__redes {
+    max-width: 220px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.footer__textos>p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--branco);
+    margin-bottom: 16px;
+}
+
+.footer__textos>h3 {
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--branco);
+}
+
+.redes {
+    border: 3px solid #fafafa;
+    border-radius: 32px;
+}
+
+.email-footer{
+    color: #fafafa;
+    /* margin-bottom: 2rem; */
+}
+
+
+
+
+/* ############################RESPONSIVO######################## */
+
+@media only screen and (max-width: 940px) {
+
+    .beneficios, .hero-textos, .quemsomos, .funcionamento, .formulário, .comissão, .participantes, .footer, .header {
+        padding:  0 16px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 32px 0;
+    }
+
+    .hero__container {
+        gap: 32px;
+        justify-content: center;
+    }
+    .hero-imagem {
+        width: 197px;
+    }
+
+    .beneficio__card-container {
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .header {
+        margin: 0 16px;
+        padding: 0;
+    }
+
+    .comissão__container-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        /* width: 100%; */
+    }
+
+    .comissão__cards {
+        padding: 16px 0;
+        gap: 8px;
+        width: 100%;
+    }
+    .comissão__card-imagem {
+        height: 45px;
+    }
+
+    .comissão__cards-seta {
+        width: 100%;
+    }
+
+    .comissão__cards-seta>img {
+        display: block;
+        transform: rotate(90deg);
+        height: 62px;
+    }
+
+    .participantes__container {
+        justify-content: center;
+    }
+
+    .formulário {
+        padding: 48px 16px;
+    }
+
+    .footer {
+        padding: 16px;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .hero__container {
+        justify-content: center;
+    }
+
+    .hero-imagem {
+        /* display: none; */
+        width: 197px;
+    }
+
+    .hero-textos {
+        width: 100%;
+    }
+
+    .quemsomos>img {
+        display: none;
+    }
+
+    .quemsomos {
+        text-align: center;
+    }
+
+    .quemsomos__textos {
+        margin: auto;
+        align-items: center;
+    }
+
+    .cadastro__link-simples {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 876px) {
+
+    .chamada-hero {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .formulário__container-texto>p {
+        margin-bottom: 32px;
+    }
+
+    .formulário__container-texto>h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .formulário__container-texto {
+        gap: 16px;
+    }
+
+
+}
+
+@media only screen and (max-width: 595px) {
+    .footer {
+        gap: 32px;
+    }
+
+    .contato {
+        right: 0px;
+        bottom: 0px;
+        width: 100%;
+        border-radius: 0;
+        justify-content: center;
+        padding: 16px 0;
+    }
+}
+
+@media only screen and (max-width: 502px) {
+    
+    .hero {
+        background-image: url("assets/corretor_celular_opacity\ 10.png"), linear-gradient(150.67deg, #E1316F 31.4%, #FEA745 89.87%);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #E1316F;
+        background-size: cover;
+        padding: 32px 0;
+    }
+    
+    .hero-imagem {
+        display: none;
+    }
+
+    .hero-imagem-mobile {
+        display: block;
+        /* margin-bottom: 32px; */
+    }
+
+    .beneficio__card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .beneficio__card-single {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        gap: 16px;
+        padding: 8px 0;
+    }
+
+    .beneficio__card-imagem, .funcionamento__etapas-imagem {
+        width: 45px;
+    }
+
+    .beneficio__card-texto {
+        width: 60%;
+        text-align: start;
+    }
+
+
+    .funcionamento__etapas-numero {
+        font-size: 24px;
+        margin-right: 16px;
+    }
+
+    .funcionamento__etapas {
+        padding: 8px 16px;
+    }
+
+    .participantes__container-imagem {
+        width: 318px;
+    }
+
+    .beneficios, .quemsomos, .funcionamento, .comissão, .participantes {
+        margin-bottom: 64px;
+    }
+
+    .quemsomos {
+        margin-top: 24px;
+    }
+
+    .comissão__container {
+        padding: 16px 0;
+        gap: 16px;
+    }
+
+    .hero-textos>h1, .hero-textos>h3 {
+        text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+    }
+
+}
+
+@media only screen and (max-width: 470px) {
+    
+}
+
+@media only screen and (max-width: 470px) {
+
+}
+
+@media only screen and (max-width: 450px) {
+
+}
