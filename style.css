@@ -767,7 +767,7 @@ footer {
     }
     
     .formulário__container-nome {
-        padding: 16px 16px;
+        font-size: 14px;
     }
 
 }
