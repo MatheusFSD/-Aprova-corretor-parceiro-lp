@@ -453,10 +453,11 @@ header {
 }
 
 .formulário__container-campos>div>h2 {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 18px;
     margin-bottom: 8px;
     text-transform: uppercase;
+    line-height: 28px;
 }
 
 label {
