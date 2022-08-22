@@ -1,3 +1,4 @@
+//Máscara Telefone
 
 const input = document.querySelector('.telefone')
 
@@ -15,6 +16,8 @@ input.addEventListener('keypress', () => {
         input.value += ' '
     }
 })
+
+//Animação de ancoragem
 
 var $doc = $('html, body');
 $('#link__formulario' || '#link__beneficios' || '#link__funcionamento').click(function() {
@@ -54,4 +57,12 @@ $('#link__hero').click(function() {
         scrollTop: $( $.attr(this, 'href') ).offset().top -64
     }, 500);
     return false;
+});
+
+//Loading formulário
+
+var formulario = $(".formulário__container-campos")
+
+formulario.submit(function(event){
+    $('body').toggleClass('loading');
 });
